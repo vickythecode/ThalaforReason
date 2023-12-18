@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thala for reason</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1 id="textContainer">_ For Reason</h1>
+        </div>
+        <div class="inputfiled">
+            <input id="inputfield" placeholder="Type The Magic Word" type="text">
+            <button>Enter</button>
+        </div>
+        <div class="pic">
+            <img src="C:\Users\ABC\Desktop\7\dhoni sad.jpg" alt="">
+        </div>
+        <div class="reset-btn">
+            <button onclick="window.location.reload(true)">reset</button>
+        </div>
+    </div>
+
+    <script>
+        inputField=document.getElementById("inputfield");
+        textContainer=document.getElementById("textContainer");
+        img=document.querySelector("img");
+        btn=document.querySelector("button");
+        btn.addEventListener("click",()=>{
+            if(inputField.value.length ==7){
+            textContainer.innerText="7hala For Reason"
+            newSrc="dhoni happy.jpeg";
+            img.src=newSrc;
+        }
+        else{
+            newSrc="dhoni sad2.jpg";
+            img.src=newSrc;
+        } 
+        })
+    </script>
+
+
+
+</body>
+</html>
