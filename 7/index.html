@@ -29,13 +29,14 @@
         img=document.querySelector("img");
         btn=document.querySelector("button");
         btn.addEventListener("click",()=>{
-            if(inputField.value.length ==7){
+            if(inputField.value.length ==7 || inputField.value=="7"){
             textContainer.innerText="7hala For Reason"
             newSrc="dhoni happy.jpeg";
             img.src=newSrc;
         }
         else{
             newSrc="dhoni sad2.jpg";
+            textContainer.innerText="_For Reason"
             img.src=newSrc;
         } 
         })
